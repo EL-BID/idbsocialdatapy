@@ -24,6 +24,8 @@ At the end of the project, all the developers who participate will be included i
 
 ## Collaboration 
 
+### Structure
+
 To keep the work structured, the repository will have two main branches: 1) main and 2) development that helps to minimize errors and make the work more effective:
 
 **1) Main:** The version contained in this Branch is always the most current version and the one which is reviewed and approved to run. This Branch should not be modified unless all changes are approved in the Development Branch. 
@@ -38,6 +40,9 @@ Because the work will be done simultaneously by several developers, it is requir
 
 3) Once the merge request is made, it is reviewed and verified that there are no errors in the new pull. Then the pull and merge will be done with the main Branch. 
 
+### Language
+
+To keep things as neat as possible and to maximize the reach of the library, we will use English for all contributions. 
 
 ## Road-map
 
