@@ -32,8 +32,7 @@ which you can install running the following command
 pre-commit install
 ```
 
-### Commiting Guidelines
-
+### Commit Guidelines
 To maintain a proper documentation of how the project is evolving and to help the automatic versioning of this package,
 commit messages must have the following structure:
 ```
@@ -56,3 +55,5 @@ commit messages must have the following structure:
 
 `scope` is an optional keyword that provides context for where the change was made. It can be anything relevant to your package or development workflow
 (e.g., it could be the module or function name affected by the change).
+
+You can find further information about this type of commit message formatting [here.](https://github.com/angular/angular/blob/main/CONTRIBUTING.md#-commit-message-format)
