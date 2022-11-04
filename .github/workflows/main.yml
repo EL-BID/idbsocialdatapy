@@ -1,0 +1,87 @@
+name: CI/CD
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  CI:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.7", "3.8", "3.9", "3.10", "3.11"]
+      fail-fast: false
+    steps:
+        - uses: actions/checkout@v3
+        - name: Set up Python
+          uses: actions/setup-python@v4
+          with:
+            python-version: ${{ matrix.python-version }}
+        - uses: actions/cache@v3
+          id: cache
+          with:
+            path: ${{ env.pythonLocation }}
+            key: ${{ runner.os }}-python-${{ env.pythonLocation }}-${{ hashFiles('pyproject.toml') }}-test-v02
+        - name: Install Dependencies
+          if: steps.cache.outputs.cache-hit != 'true'
+          run: pip install -e .[dev,test]
+        - name: Lint with flake8
+          run: |
+            # stop the build if there are Python syntax errors or undefined names
+            flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+            # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
+            flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+        - name: Test with pytest
+          run: pytest tests/
+        - name: Check black formatting
+          uses: psf/black@stable
+          with:
+            options: "--check --verbose"
+        - name: Check isort
+          uses: isort/isort-action@master
+  CD:
+    needs: CI
+    # Only run this job if new work is pushed to "main"
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    # Step 1. Set up operating system
+    runs-on: ubuntu-latest
+    steps:
+    # Step 2. Set up Python 3.9
+    - uses: actions/setup-python@v4
+      with:
+        python-version: 3.9
+    # Step 3. Check-out repository so we can access its contents
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+    # Step 4. Use PSR to make release
+    - name: Python Semantic Release
+      env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+          pip install python-semantic-release
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          semantic-release publish
+#     - name: Publish to TestPyPI
+#       uses: pypa/gh-action-pypi-publish@release/v1
+#       with:
+#         user: __token__
+#         password: ${{ secrets.TEST_PYPI_API_TOKEN }}
+#         repository_url: https://test.pypi.org/legacy/
+
+#     - name: Test install from TestPyPI
+#       run: |
+#           pip install \
+#           --index-url https://test.pypi.org/simple/ \
+#           --extra-index-url https://pypi.org/simple \
+#           pycounts
+
+#     - name: Publish to PyPI
+#       uses: pypa/gh-action-pypi-publish@release/v1
+#       with:
+#         user: __token__
+#         password: ${{ secrets.PYPI_API_TOKEN }}
