@@ -1,4 +1,7 @@
 import os
+import requests
+from pandas.io.json import json_normalize
+import pandas as pd
 
 base_url = "https://scl.datamig.org/"
 
