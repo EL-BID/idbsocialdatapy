@@ -34,5 +34,11 @@ def get_countries():
     df = pd.read_json(get_countries_url)
     return df
 
+#-----GET THEMES FUNCTION-----
 
+def get_themes():
+    url_links = iadburls()
+    get_themes_url = os.path.join(url_links['matedata_url'],"themes")
+    df = pd.read_json(get_themes_url)
+    return df
 
