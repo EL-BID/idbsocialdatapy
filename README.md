@@ -52,11 +52,11 @@ The functions are ordered by importance, thus we will start working from the top
 
 | Function | Objective | Status | Developer |
 | :---: | :--- | :--- | :--- | 
-| iadburls | Function to get urls of the API | To do | Not assigned |
+| iadburls | Function to get urls of the API | Done | Genrry|
 | query_indicator | Main function, query indicators | To do | Not assigned |
 | query_dictionary | See available indicators | To do | Not assigned |
-| get_countries | Search available countries | To do | Not assigned |
-| get_themes | Search available topics | To do | Not assigned |
+| get_countries | Search available countries | In progress | JP y Elena |
+| get_themes | Search available topics | In progress | JP y Elena|
 | search_indicator | Give string to search within the dictionary for an indicator | To do | Not assigned |
 | get_sources | Get available sources | To do | Not assigned |
 | idbsocial_plot | Create plot | To do | Juan & Sergio |
