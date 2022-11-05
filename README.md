@@ -52,16 +52,16 @@ The functions are ordered by importance, thus we will start working from the top
 
 | Function | Objective | Status | Developer |
 | :---: | :--- | :--- | :--- | 
-| iadburls | Function to get urls of the API | To do | Not assigned |
+| iadburls | Function to get urls of the API | Done | Genrry|
 | query_indicator | Main function, query indicators | To do | Not assigned |
 | query_dictionary | See available indicators | To do | Not assigned |
-| get_countries | Search available countries | To do | Not assigned |
-| get_themes | Search available topics | To do | Not assigned |
+| get_countries | Search available countries | In progress | JP y Elena |
+| get_themes | Search available topics | In progress | JP y Elena|
 | search_indicator | Give string to search within the dictionary for an indicator | To do | Not assigned |
 | get_sources | Get available sources | To do | Not assigned |
-| idbsocial_plot | Create plot | To do | Not assigned |
-| get_map | Get a map from regions | To do | Not assigned |
-| idbsocial_choropleth | Create a map with indicator | To do | Not assigned |
+| idbsocial_plot | Create plot | To do | Juan & Sergio |
+| get_map | Get a map from regions | To do | Juan & Sergio |
+| idbsocial_choropleth | Create a map with indicator | To do | Juan & Sergio |
 
 
 The developers will choose a function/functions, via slack, and we will create the repository's project and assign the tasks to have control and avoid repetitions.
@@ -69,6 +69,12 @@ The developers will choose a function/functions, via slack, and we will create t
 ## Authors
 
 This section will be added when we finish the library.
+
+## Thanks to all contributors ❤
+
+ <a href = "https://github.com/EL-BID/idbsocialdatapy/graphs/contributors">
+   <img src = "https://contrib.rocks/image?repo=EL-BID/idbsocialdatapy"/>
+ </a>
 
 ## License
 
