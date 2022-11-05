@@ -59,9 +59,9 @@ The functions are ordered by importance, thus we will start working from the top
 | get_themes | Search available topics | To do | Not assigned |
 | search_indicator | Give string to search within the dictionary for an indicator | To do | Not assigned |
 | get_sources | Get available sources | To do | Not assigned |
-| idbsocial_plot | Create plot | To do | Not assigned |
-| get_map | Get a map from regions | To do | Not assigned |
-| idbsocial_choropleth | Create a map with indicator | To do | Not assigned |
+| idbsocial_plot | Create plot | To do | Juan & Sergio |
+| get_map | Get a map from regions | To do | Juan & Sergio |
+| idbsocial_choropleth | Create a map with indicator | To do | Juan & Sergio |
 
 
 The developers will choose a function/functions, via slack, and we will create the repository's project and assign the tasks to have control and avoid repetitions.
@@ -69,6 +69,12 @@ The developers will choose a function/functions, via slack, and we will create t
 ## Authors
 
 This section will be added when we finish the library.
+
+## Thanks to all contributors ❤
+
+ <a href = "https://github.com/EL-BID/idbsocialdatapy/graphs/contributors">
+   <img src = "https://contrib.rocks/image?repo=EL-BID/idbsocialdatapy"/>
+ </a>
 
 ## License
 
