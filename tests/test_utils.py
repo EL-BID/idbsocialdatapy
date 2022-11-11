@@ -1,9 +1,6 @@
 import pytest
-import os
-from pandas.io.json import json_normalize
-import pandas as pd
-from idbsocialdatapy.utils import iadburls
 
+from idbsocialdatapy.utils import iadburls
 
 
 @pytest.fixture
