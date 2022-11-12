@@ -48,20 +48,20 @@ To keep things as neat as possible and to maximize the reach of the library, we 
 
 To make the work more effective the roadmap to develop this library will be based on the R package [idbsocialdataR](https://github.com/EL-BID/idbsocialdataR). We will work to replicate the different functions in the R package. 
 
-The functions are ordered by importance, thus we will start working from the top and move to the bottom. 
+The functions are ordered by importance, thus we will start working from the top and move to the bottom. The last column shows the category of each function, we will do one script by category. For instance, query_indicator, get_themes, get_countries and get_sources will be in the same metadata script.
 
-| Function | Objective | Status | Developer |
-| :---: | :--- | :--- | :--- | 
-| iadburls | Function to get urls of the API | Done | Genrry|
-| query_indicator | Main function, query indicators | To do | Not assigned |
-| query_dictionary | See available indicators | To do | Not assigned |
-| get_countries | Search available countries | In progress | JP y Elena |
-| get_themes | Search available topics | In progress | JP y Elena|
-| search_indicator | Give string to search within the dictionary for an indicator | To do | Not assigned |
-| get_sources | Get available sources | To do | Not assigned |
-| idbsocial_plot | Create plot | To do | Juan & Sergio |
-| get_map | Get a map from regions | To do | Juan & Sergio |
-| idbsocial_choropleth | Create a map with indicator | To do | Juan & Sergio |
+| Function | Objective | Status | Developer | Script type |
+| :---: | :--- | :--- | :--- | :--- |
+| iadburls | Function to get urls of the API | Done | Genrry| utils |
+| query_indicator | Main function, query indicators | To do | Genrry | scldata (core) |
+| query_dictionary | See available indicators | To do | María | Metadata |
+| get_countries | Search available countries | In progress | JP y Elena | Metadata |
+| get_themes | Search available topics | In progress | JP y Elena| Metadata |
+| search_indicator | Give string to search within the dictionary for an indicator | To do | Genrry | scldata (core) |
+| get_sources | Get available sources | To do | Not assigned | Metadata |
+| idbsocial_plot | Create plot | In progress | Juan & Sergio | Plot |
+| get_map | Get a map from regions | In progress | Juan & Sergio | Map |
+| idbsocial_choropleth | Create a map with indicator | In progress | Juan & Sergio | Map |
 
 
 The developers will choose a function/functions, via slack, and we will create the repository's project and assign the tasks to have control and avoid repetitions.
