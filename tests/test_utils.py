@@ -19,7 +19,7 @@ def test_iadburls_type(example_iadburls):
 def test_iadburls_keys(example_iadburls):
     keys = example_iadburls.keys()
     for key in keys:
-        assert key in ("base_urlb", "utils_url", "matedata_url", "geojson_url")
+        assert key in ("base_url", "utils_url", "metadata_url", "geojson_url")
 
 
 def test_iadburls_values(example_iadburls):
