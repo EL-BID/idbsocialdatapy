@@ -1,6 +1,6 @@
 import pytest
 
-from idbsocialdatapy.utils import iadburls
+from idbsocialdatapy import iadburls
 
 
 @pytest.fixture

@@ -2,7 +2,7 @@ import os
 
 import pandas as pd
 
-from idbsocialdatapy import iadburls
+from idbsocialdatapy.utils import iadburls
 
 
 def get_countries():
