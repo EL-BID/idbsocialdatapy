@@ -1,6 +1,6 @@
 import pytest
 
-from idbsocialdatapy.metadata import get_countries, get_themes
+from idbsocialdatapy import get_countries, get_themes
 
 
 @pytest.fixture
@@ -51,7 +51,7 @@ def test_get_themes_columns(example_get_themes):
     assert len(example_columns) == len(columns_themes)
 
 
-def test_get_themes_column_identity(example_get_themes):  # FALLA
+def test_get_themes_column_identity(example_get_themes):
     assert list(example_get_themes.columns) == list(columns_themes)
 
 
