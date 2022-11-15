@@ -53,12 +53,12 @@ The functions are ordered by importance, thus we will start working from the top
 | Function | Objective | Status | Developer | Script type |
 | :---: | :--- | :--- | :--- | :--- |
 | iadburls | Function to get urls of the API | Done | Genrry| utils |
-| query_indicator | Main function, query indicators | To do | Genrry | scldata (core) |
-| query_dictionary | See available indicators | To do | María | Metadata |
-| get_countries | Search available countries | In progress | JP y Elena | Metadata |
-| get_themes | Search available topics | In progress | JP y Elena| Metadata |
-| search_indicator | Give string to search within the dictionary for an indicator | To do | Genrry | scldata (core) |
-| get_sources | Get available sources | To do | Not assigned | Metadata |
+| query_indicator | Main function, query indicators | Done | Genrry | scldata (core) |
+| query_dictionary | See available indicators | In progress | María | Metadata |
+| get_countries | Search available countries | Done | JP y Elena | Metadata |
+| get_themes | Search available topics | Done | JP y Elena| Metadata |
+| search_indicator | Give string to search within the dictionary for an indicator | Done | Genrry | scldata (core) |
+| get_sources | Get available sources | In progress | JP y Elena | Metadata |
 | idbsocial_plot | Create plot | In progress | Juan & Sergio | Plot |
 | get_map | Get a map from regions | In progress | Juan & Sergio | Map |
 | idbsocial_choropleth | Create a map with indicator | In progress | Juan & Sergio | Map |
