@@ -1,6 +1,6 @@
 import pytest
 
-from idbsocialdatapy import get_countries, get_themes
+from idbsocialdatapy import get_countries, get_sources, get_themes
 
 
 @pytest.fixture
@@ -11,6 +11,11 @@ def example_get_countries():
 @pytest.fixture
 def example_get_themes():
     return get_themes()
+
+
+@pytest.fixture
+def example_get_sources():
+    return get_sources()
 
 
 columns_countries = [
@@ -29,7 +34,22 @@ columns_countries = [
     "isoalpha3",
     "m49code",
 ]
+
 columns_themes = ["theme_en", "theme_es"]
+
+columns_sources = [
+    "collection",
+    "collection_en",
+    "collection_es",
+    "id",
+    "label_es",
+    "label_en",
+    "description_es",
+    "description_en",
+    "url_collection",
+    "url",
+    "code",
+]
 
 
 def test_get_countries_columns(example_get_countries):
@@ -58,3 +78,17 @@ def test_get_themes_column_identity(example_get_themes):
 def test_get_themes_shape(example_get_themes):
     example_themes = example_get_themes.shape
     assert example_themes == (11, 2)
+
+
+def test_get_sources_columns(example_get_sources):
+    example_sources = example_get_sources.columns
+    assert len(example_sources) == len(columns_sources)
+
+
+def test_get_sources_column_identity(example_get_sources):
+    assert list(example_get_sources.columns) == list(columns_sources)
+
+
+def test_get_sources_shape(example_get_sources):
+    example_sources = example_get_sources.shape
+    assert example_sources == (49, 11)
