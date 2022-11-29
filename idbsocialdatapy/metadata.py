@@ -1,6 +1,7 @@
 import os
 
 import pandas as pd
+import requests
 
 from idbsocialdatapy.utils import iadburls
 
@@ -34,3 +35,11 @@ def query_dictionary(indicator="All"):
 
     df = pd.read_json(get_dictionary_url)
     return df
+
+
+def get_sources():
+    url_links = iadburls()
+    get_sources_url = os.path.join(url_links["metadata_url"], "sources")
+    json_data = requests.get(get_sources_url).json()
+    data = pd.DataFrame(json_data)
+    return data
