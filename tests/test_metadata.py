@@ -77,7 +77,7 @@ def test_get_themes_column_identity(example_get_themes):
 
 def test_get_themes_shape(example_get_themes):
     example_themes = example_get_themes.shape
-    assert example_themes == (11, 2)
+    assert example_themes == (9, 2)
 
 
 def test_get_sources_columns(example_get_sources):
