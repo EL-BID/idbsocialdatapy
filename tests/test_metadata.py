@@ -57,17 +57,17 @@ columns_sources = [
 ]
 
 columns_dictionary = [
-    "collection", 
-    "resource", 
-    "theme_en", 
-    "theme_es", 
-    "indicator", 
-    "label_en", 
-    "label_es", 
-    "description_en", 
-    "description_es", 
-    "valuetype", 
-    "collection_en", 
+    "collection",
+    "resource",
+    "theme_en",
+    "theme_es",
+    "indicator",
+    "label_en",
+    "label_es",
+    "description_en",
+    "description_es",
+    "valuetype",
+    "collection_en",
 ]
 
 
