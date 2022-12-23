@@ -1,7 +1,6 @@
 import pytest
 
-from idbsocialdatapy import (get_countries, get_sources, get_themes,
-                             query_dictionary)
+from idbsocialdatapy import get_countries, get_sources, get_themes, query_dictionary
 
 
 @pytest.fixture
