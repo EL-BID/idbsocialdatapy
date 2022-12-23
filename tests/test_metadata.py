@@ -1,6 +1,7 @@
 import pytest
 
-from idbsocialdatapy import get_countries, get_sources, get_themes, query_dictionary
+from idbsocialdatapy import (get_countries, get_sources, get_themes,
+                             query_dictionary)
 
 
 @pytest.fixture
@@ -57,17 +58,17 @@ columns_sources = [
 ]
 
 columns_dictionary = [
-    "collection", 
-    "resource", 
-    "theme_en", 
-    "theme_es", 
-    "indicator", 
-    "label_en", 
-    "label_es", 
-    "description_en", 
-    "description_es", 
-    "valuetype", 
-    "collection_en", 
+    "collection",
+    "resource",
+    "theme_en",
+    "theme_es",
+    "indicator",
+    "label_en",
+    "label_es",
+    "description_en",
+    "description_es",
+    "valuetype",
+    "collection_en",
 ]
 
 
