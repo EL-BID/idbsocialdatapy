@@ -1,6 +1,6 @@
 import pytest
 
-from idbsocialdatapy import get_countries, get_sources, get_themes
+from idbsocialdatapy import get_countries, get_sources, get_themes, query_dictionary
 
 
 @pytest.fixture
@@ -16,6 +16,11 @@ def example_get_themes():
 @pytest.fixture
 def example_get_sources():
     return get_sources()
+
+
+@pytest.fixture
+def example_query_dictionary():
+    return query_dictionary()
 
 
 columns_countries = [
@@ -49,6 +54,20 @@ columns_sources = [
     "url_collection",
     "url",
     "code",
+]
+
+columns_dictionary = [
+    "collection", 
+    "resource", 
+    "theme_en", 
+    "theme_es", 
+    "indicator", 
+    "label_en", 
+    "label_es", 
+    "description_en", 
+    "description_es", 
+    "valuetype", 
+    "collection_en", 
 ]
 
 
@@ -92,3 +111,17 @@ def test_get_sources_column_identity(example_get_sources):
 def test_get_sources_shape(example_get_sources):
     example_sources = example_get_sources.shape
     assert example_sources == (49, 11)
+
+
+def test_query_dictionary_columns(example_query_dictionary):
+    example_dictionary = example_query_dictionary.columns
+    assert len(example_dictionary) == len(columns_dictionary)
+
+
+def test_query_dictionary_column_identity(example_query_dictionary):
+    assert list(example_query_dictionary.columns) == list(columns_dictionary)
+
+
+def test_query_dictionary_shape(example_query_dictionary):
+    example_dictionary = example_query_dictionary.shape[1]
+    assert example_dictionary == (11)
