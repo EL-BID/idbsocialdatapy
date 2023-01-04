@@ -42,6 +42,8 @@ jobs:
             options: "--check --verbose"
         - name: Check isort
           uses: isort/isort-action@master
+          with:
+            configuration: "--profile black --check-only --diff ."
   CD:
     needs: CI
     # Only run this job if new work is pushed to "main"
