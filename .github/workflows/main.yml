@@ -42,6 +42,8 @@ jobs:
             options: "--check --verbose"
         - name: Check isort
           uses: isort/isort-action@master
+          with:
+            configuration: "--profile black --check-only --diff ."
   CD:
     needs: CI
     # Only run this job if new work is pushed to "main"
@@ -78,7 +80,7 @@ jobs:
 #           pip install \
 #           --index-url https://test.pypi.org/simple/ \
 #           --extra-index-url https://pypi.org/simple \
-#           pycounts
+#           idbsocialdatapy
 
 #     - name: Publish to PyPI
 #       uses: pypa/gh-action-pypi-publish@release/v1
