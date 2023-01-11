@@ -14,10 +14,10 @@ The project to develop the library in Python resulted from the implementation wo
 
 ## Installation
 
-To install the idbsocialpy library you can use:
+To install the idbsocialdatapy library you can use:
 
 ```sh
-$ pip install idbsocialpy
+$ pip install idbsocialdatapy
 
 ```
 
@@ -30,7 +30,7 @@ There are many indicators in this library, with the metadata functions you will 
 Get the dictionary for all the indicators in our API. 
 
 ```python
-import idbsocialpy as idb
+import idbsocialdatapy as idb
 dictionary = idb.query_dictionary()
 
 ```
