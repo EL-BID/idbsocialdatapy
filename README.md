@@ -112,3 +112,12 @@ Copyright © 2020. Banco Interamericano de Desarrollo ("BID"). Uso autorizado. [
  <a href = "https://github.com/EL-BID/idbsocialdatapy/graphs/contributors">
    <img src = "https://contrib.rocks/image?repo=EL-BID/idbsocialdatapy"/>
  </a>
+ 
+## Other libraries
+
+You can also find this library in R and Stata:
+
+- [Library R](https://github.com/EL-BID/idbsocialdataR)
+- [Library Stata](https://github.com/BID-DATA/idbsocialdata)
+
+ 
