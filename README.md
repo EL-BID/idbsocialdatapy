@@ -100,6 +100,8 @@ idbsocialdatapy's original authors are:
 - [María Reyes Retana Torre](https://github.com/mariarrt94)
 - [Sergio Andrés Herrera Velásquez](https://github.com/sahvsergio)
 - [Juan Villa Hernández](https://github.com/juanfvilla)
+- [Julia Vieira de Andrade Dias](https://github.com/Juliavieiradeandradedias)
+- [Jesenia Rodriguez Paredes](https://github.com/jesknowmad)
 
 ## License
 
