@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.2.1 (2023-01-17)
+### Fix
+* Continuous delivery workflow ([`033eff0`](https://github.com/EL-BID/idbsocialdatapy/commit/033eff0054bd50aa113123679ed2f5561668d7ae))
+
 ## v0.2.0 (2023-01-17)
 ### Feature
 * Correct test dictionary ([`b4147ac`](https://github.com/EL-BID/idbsocialdatapy/commit/b4147acafbc84bcdf1309d26b86b0b23787a7f3b))
