@@ -1,6 +1,3 @@
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=EL-BID_idbsocialdatapy&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=EL-BID_idbsocialdatapy)
-![analytics image (flat)](https://raw.githubusercontent.com/vitr/google-analytics-beacon/master/static/badge.svg)
-![analytics](https://www.google-analytics.com/collect?v=1&cid=555&t=pageview&ec=repo&ea=open&dp=/idbsocialdatapy/readme&dt=&tid=UA-4677001-16)
 
 **SCL Data - Data Ecosystem Working Group**
 
